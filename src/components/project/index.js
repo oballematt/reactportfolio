@@ -15,7 +15,7 @@ function Project(props) {
             </div>
             <div className="row">
                 <div className="col-md-12">
-                    <div className="card mb-3 bg-light text-dark" style={{ maxWidth: 540 }}>
+                    <div className="card mb-3 bg-light text-dark opacity" style={{ maxWidth: 540 }}>
                         <div className="row no-gutters">
                             <div className="col-md-8">
                                 <div className="card-body">
