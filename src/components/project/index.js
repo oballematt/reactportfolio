@@ -1,24 +1,21 @@
 import React from "react"
 import { Link } from "react-router-dom";
 
-
-function Nav() {
+function Project(props) {
     return (
-        <nav className="navbar navbar-expand-lg opacity navbar-light bg-light fixed-top">
-            <Link className="navbar-brand" to="/about">Matthew Oballe</Link>
-            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span className="navbar-toggler-icon"></span>
-            </button>
-            <div className="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                <div className="navbar-nav">
-                    <Link className="nav-link font" to="/about">About Me <span className="sr-only">(current)</span></Link>
-                    <Link className="nav-link font" to="/portfolio">Portfolio</Link>
-                    <Link className="nav-link font" to="/contact">Contact</Link>
+            <div className="col-md-4">
+                <div className="card opacity bg-light">
+                    <img src={props.img} className="card-img-top" alt="project" />
+                    <div className="card-body">
+                        <h5 className="card-title">{props.title}</h5> 
+                        <p className="card-text">{props.description}</p>
+                        <Link to={{pathname:props.projectLink}} target="_blank" className="btn btn-secondary">Check out the project!</Link>
+                        <br/>
+                        <br/>
+                        <Link to={{pathname:props.repoLink}} target="_blank" className="btn btn-secondary">Check out the repository!</Link>
+                    </div>
                 </div>
             </div>
-        </nav>
     )
 }
-
-export default Nav
+export default Project

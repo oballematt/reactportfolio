@@ -5,6 +5,7 @@ import Portfolio from "./pages/Portfolio"
 import Nav from "../src/components/navbar/index"
 import Footer from "../src/components/footer"
 
+
 function App() {
   return (
     <Router>
