@@ -1,11 +1,11 @@
 import React from "react"
 import Project from "../components/project"
-import PicA from "../images/rsz_project1.jpg"
-import PicB from "../images/rsz_weather.jpg"
-import PicC from "../images/rsz_workday.jpg"
-import PicD from "../images/rsz_fitness.jpg"
-import PicE from "../images/rsz_quiz.jpg"
-import PicF from "../images/rsz_workout.jpg"
+import PicA from "../images/Project1.jpg"
+import PicB from "../images/Weather.jpg"
+import PicC from "../images/workDay.jpg"
+import PicD from "../images/fitness.jpg"
+import PicE from "../images/quiz.jpg"
+import PicF from "../images/workout.jpg"
 
 function Porfolio() {
     return (
@@ -19,7 +19,6 @@ function Porfolio() {
                     </div>
                 </div>
             </div>
-            <div className="row">
                 <Project
                     img={PicA} 
                     title="Bad Jokes and Brews" 
@@ -40,8 +39,6 @@ function Porfolio() {
                     When the current hour is past previous, the time block will display gray. When the hour is current, the time block will display red, and when the time block is in the future, it will display green."
                     projectLink="https://oballematt.github.io/Work-Day-Scheduler/"
                     repoLink="https://github.com/oballematt/Work-Day-Scheduler"/>
-            </div>   
-            <div className="row">
                 <Project 
                     img={PicD}
                     title="Combat Fitness"
@@ -60,7 +57,7 @@ function Porfolio() {
                     description="When the user loads the page, they will be given an option to add a new workout or continue their last workout. If the user clicks on new workout, they will be directed to a page that will ask them if they want resistance or cardio workouts. If the user chooses resistance,tThey will then add what workout they performed, how many reps, how many sets, and the duration of their workout. If the user chooses cardio, they will enter what cardio exercise they performed, how many miles they went and how long the exercise was performed for. Back at the homepage, whatever info the user inputed, will appear under last workout with the information they inputed about the workout. In the top left corner, the user can click dashboard, which will take them to a chart that logs all of their workout information."
                     projectLink="https://workout-trackerz.herokuapp.com/?id=5fadb0406f99910017083edd/"
                     repoLink="https://github.com/oballematt/No-SQL-Workout-Tracker"/>
-            </div>
+           
         </div>
     )
 }
