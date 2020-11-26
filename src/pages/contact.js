@@ -3,20 +3,21 @@ import emailjs from 'emailjs-com';
 // import { Link } from "react-router-dom";
 
 export default function Contact() {
-
+   
     function sendEmail(e) {
+     
         e.preventDefault();
         alert("Message Sent!")
-        e.target.reset()
-
-
+       
         emailjs.sendForm(process.env.REACT_APP_EMAILJS_SERVICE_KEY, process.env.REACT_APP_EMAILJS_TEMPLATE_KEY, e.target, process.env.REACT_APP_EMAILJS_USER_KEY)
             .then((result) => {
                 console.log(result.text);
             }, (error) => {
                 console.log(error.text);
             });
+           
     }
+ 
     return (
         <div className="container style">
             <div className="row">
@@ -36,16 +37,16 @@ export default function Contact() {
                     </div>
                     <div className="form-group col-md-6">
                         <label htmlFor="lastName">Last Name</label>
-                        <input type="text" className="form-control" name="last_name" placeholder="Last Name" />
+                        <input type="text"  className="form-control" name="last_name" placeholder="Last Name" />
                     </div>
                 </div>
                 <div className="form-group">
                     <label htmlFor="inputEmail4">Email</label>
-                    <input type="email" className="form-control" name="email_name" id="inputEmail4" placeholder="Email" />
+                    <input type="email"  className="form-control" name="email_name" id="inputEmail4" placeholder="Email" />
                 </div>
                 <div className="form-group">
                     <label htmlFor="exampleFormControlTextarea1">Comments</label>
-                    <textarea className="form-control" name="message" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <textarea className="form-control"  name="message" id="exampleFormControlTextarea1" rows="3"></textarea>
                 </div>
                 <button value="send" type="submit" className="btn btn-light opacity">Email Me</button>
             </form>
