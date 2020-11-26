@@ -6,11 +6,9 @@ function Project(props) {
         <>
             <div className="row">
                 <div className="col-md-12">
-                    <div class="card bg-dark text-white">
                         <img src={props.img} class="card-img" alt="project" />
                         <div class="card-img-overlay">
                         </div>
-                    </div>
                 </div>
             </div>
             <div className="row">
