@@ -20,9 +20,9 @@ function Project(props) {
                                 <div className="card-body">
                                     <h5 className="card-title">{props.title}</h5>
                                     <p className="card-text">{props.description}</p>
-                                    <Link to={props.projectLink} className="btn btn-secondary">Check out the project!</Link>
+                                    <Link to={{pathname:props.projectLink}} className="btn btn-secondary" target="_blank">Check out the project!</Link>
                                     <hr/>
-                                    <Link to={props.repoLink} className="btn btn-secondary">Check out the repository!</Link>
+                                    <Link to={{pathname:props.repoLink}} className="btn btn-secondary" target="_blank">Check out the repository!</Link>
                                 </div>
                             </div>
                         </div>
