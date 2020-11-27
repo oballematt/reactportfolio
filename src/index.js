@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css'
-import 'bootswatch/dist/superhero/bootstrap.min.css'; // Added this :boom:
+import 'bootswatch/dist/superhero/bootstrap.min.css';
+
 import './index.css';
 
 ReactDOM.render(<App />, document.getElementById('root'));
