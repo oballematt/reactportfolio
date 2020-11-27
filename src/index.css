@@ -36,3 +36,9 @@ img{
 #fontStyle{
   line-height: 40px;
 }
+
+.round {
+  border-radius: 25px;
+  padding: 20px;
+  border-style: groove;
+}

@@ -5,15 +5,16 @@ function Project(props) {
     return (
         <>
             <div className="row">
-                <div className="col-md-12">
-                        <img src={props.img} class="card-img" alt="project" />
-                        <div class="card-img-overlay">
+                <div className="col-md-12 round">
+                        <img src={props.img} className="card-img" alt="project" />
+                        <div className="card-img-overlay">
                         </div>
                 </div>
             </div>
+            <br/>
             <div className="row">
                 <div className="col-md-12">
-                    <div className="card mb-3 bg-light text-black opacity" style={{ maxWidth: 800 }}>
+                    <div className="card mb-3 bg-light text-black opacity round" style={{ maxWidth: 800 }}>
                         <div className="row no-gutters">
                             <div className="col-md-8">
                                 <div className="card-body">
