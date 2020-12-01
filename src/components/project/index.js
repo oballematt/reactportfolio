@@ -7,8 +7,8 @@ function Project(props) {
             <div className="row">
                 <div className="col-md-12 round">
                         <img src={props.img} className="card-img" alt="project" />
-                        <div className="card-img-overlay">
-                        </div>
+                        {/* <div className="card-img-overlay">
+                        </div> */}
                 </div>
             </div>
             <br/>
