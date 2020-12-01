@@ -1,11 +1,13 @@
 import React from "react"
 import Project from "../components/project"
-import PicA from "../images/Project1.jpg"
+import PicA from "../images/newproject11.png" /// TODO: (Explanation - why PicA = String )
 import PicB from "../images/Weather.jpg"
 import PicC from "../images/workDay.jpg"
 import PicD from "../images/fitness.jpg"
 import PicE from "../images/quiz.jpg"
 import PicF from "../images/workout.jpg"
+
+
 
 function Porfolio() {
     return (
@@ -20,7 +22,7 @@ function Porfolio() {
                 </div>
             </div>
                 <Project
-                    img={PicA} 
+                    img={PicA} // TODO: (Why the build is passing Image but is not showing up on actual app, once deployed through github.io)
                     title="Bad Jokes and Brews" 
                     description="In this app, the user will enter a zip code to find breweries in that area. A map is presented so that you may enter the brewery name and find the location, as well as pinging your current location to evaluate the distance between you and the brewery. The user will also be presented with a button to display a randomly generated joke, so you may always be the center of attention" 
                     projectLink="https://bcermak.github.io/BrewsNDadJokes/"
