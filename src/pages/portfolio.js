@@ -1,6 +1,6 @@
 import React from "react"
 import Project from "../components/project"
-import PicA from "../images/Project1.jpg"
+import PicA from "../images/Porject1.jpg"
 import PicB from "../images/Weather.jpg"
 import PicC from "../images/workDay.jpg"
 import PicD from "../images/fitness.jpg"
