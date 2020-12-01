@@ -1,6 +1,6 @@
 import React from "react"
-import ProfilePic from "../../public/images/profile.jpg"
-import Resume from "../../public/images/Resume.pdf"
+import ProfilePic from "../images/profile.jpg"
+import Resume from "../images/Resume.pdf"
 import { Link } from "react-router-dom";
 
 
