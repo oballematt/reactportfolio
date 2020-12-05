@@ -2,8 +2,8 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import About from "./pages/About"
 import Contact from "./pages/Contact"
 import Portfolio from "./pages/Portfolio"
-import Nav from "../src/components/navbar/index"
-import Footer from "../src/components/footer"
+import Nav from "./components/navbar/index"
+import Footer from "./components/footer"
 
 function App() {
   return (

@@ -28,7 +28,7 @@ function About () {
                                 <h5 className="card-title">Hey! I'm Matthew,</h5>
                                     <p className="card-text" id="fontStyle">UT Coding Boot Camp student and former production manager with skills in directing and developing individuals in a fast paced, competitive industry. With the transition into web development, I strive to bring my experience as a manager and mesh them with the skills I'm learning at the coding boot camp to become a great and innovative developer. </p>
                                     <br/>
-                                    <Link className="text-dark font" to={Resume} target="_blank">Link to PDF Resume</Link>
+                                    <Link className="text-black" to={Resume} target="_blank">Link to PDF Resume</Link>
                             </div>
                         </div>
                     </div>
